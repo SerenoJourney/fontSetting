@@ -1,0 +1,124 @@
+{
+
+"workbench.colorCustomizations": {
+    "editor.background": "#1E1E1E",  // ソフトブラックの背景
+    "editor.foreground": "#CCCCCC",  // ややグレーがかった白のテキスト
+    "statusBar.background": "#2C2C2C",  // ダークグレー
+    "statusBar.noFolderBackground": "#2C2C2C",  // プロジェクトフォルダが開かれていない時の背景色
+    "statusBar.debuggingBackground": "#2C2C2C",  // デバッグ中の背景色
+    "statusBar.foreground": "#CCCCCC"  // ステータスバーのテキスト色
+},
+"workbench.colorTheme": "Visual Studio 2019 Dark",
+"editor.tokenColorCustomizations": {
+
+    "textMateRules": [
+        {
+            "scope": [
+                "variable.other.readwrite",
+                "variable.other.local",  
+                "entity.name.function.call.cpp",
+                "entity.name.function.member.cpp",
+                "keyword.operator",
+                "entity.name.function.operator.member.cpp",
+                "punctuation.section",
+            ],
+            "settings": {
+                "foreground": "#CCCCCC" ,
+                "fontStyle": "",  
+            }
+        },
+        // 追いやすくする
+        {
+            "scope": [
+                "variable.parameter.cpp",
+            ],
+            "settings": {
+                "foreground": "#99CCFF" ,
+                "fontStyle": "",  
+            }
+        },
+        // 知らしめる
+        {
+            "scope": [
+                "variable.other.property.cpp",  // メンバー変数
+            ],
+            "settings": {
+                "foreground": "#FFCC00", 
+                "fontStyle": "",  
+            }
+        },
+        // 少し目立たせる．
+        {
+            "scope": [
+                "meta.block.class.cpp",
+                "meta.body.class.cpp",
+                "punctuation.section.block.begin.bracket.curly.function.definition.cpp",
+                "punctuation.terminator",
+                "storage",
+                "keyword.control", 
+            ],
+            "settings": {
+                "foreground": "#CCCCCC" ,
+                "fontStyle": "italic",
+            }
+        },
+        // 若干目立つ色．
+        {
+            "scope": [
+                "storage.type.modifier.access.control",  // アクセス修飾子
+                "storage.type",  // 型定義
+                "storage.modifier.specifier.const.cpp",  // const 修飾子
+                "entity.name.type.cpp",
+                "entity.name.namespace.cpp",
+                "storage.modifier.specifier.functional.pre-parameters.explicit.cpp"
+            ],
+            "settings": {
+                "foreground": "#C2E699",  
+            }
+        },
+        // 強調
+        {
+            "scope": [
+                "storage.type.modifier.access.control",  // アクセス修飾子
+                "storage.type",  // 型定義
+                "storage.modifier.specifier.const.cpp",  // const 修飾子
+                "storage.modifier.specifier.functional.pre-parameters.explicit.cpp"
+            ],
+            "settings": {
+                "fontStyle": "bold" 
+            }
+        },
+        // 区別をつきやすくする
+        {
+            "scope": [
+                "comment",  // すべてのコメント
+                "comment.block",  // ブロックコメント
+                "comment.line"  // ラインコメント
+            ],
+            "settings": {
+                "foreground": "#808080",  // 灰色
+                "fontStyle": "italic" 
+            }
+        },
+        // 際立たせる
+        {
+            "scope": [
+                "message.error",  // エラーメッセージ
+                "invalid.deprecated",  // 廃止された要素
+                "keyword.control.return.cpp"  // returnステートメント
+            ],
+            "settings": {
+                "foreground": "#FF6347"  
+            }
+        },
+        {
+            "scope": [
+                "keyword.other.default"
+            ],
+            "settings": {
+                "foreground": "#D2A6FF" 
+            }
+        }
+    ]
+},
+
