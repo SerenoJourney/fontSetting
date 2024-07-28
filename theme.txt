@@ -1,12 +1,10 @@
-{
-
 "workbench.colorCustomizations": {
-    "editor.background": "#1E1E1E",
-    "editor.foreground": "#CCCCCC", 
-    "statusBar.background": "#2C2C2C",
-    "statusBar.noFolderBackground": "#2C2C2C",
-    "statusBar.debuggingBackground": "#2C2C2C",
-    "statusBar.foreground": "#CCCCCC"
+    "editor.background": "#1E1E1E",  // ソフトブラックの背景
+    "editor.foreground": "#CCCCCC",  // ややグレーがかった白のテキスト
+    "statusBar.background": "#2C2C2C",  // ダークグレー
+    "statusBar.noFolderBackground": "#2C2C2C",  // プロジェクトフォルダが開かれていない時の背景色
+    "statusBar.debuggingBackground": "#2C2C2C",  // デバッグ中の背景色
+    "statusBar.foreground": "#CCCCCC"  // ステータスバーのテキスト色
 },
 "editor.tokenColorCustomizations": {
 
@@ -40,6 +38,8 @@
         {
             "scope": [
                 "variable.other.property.cpp",  // メンバー変数
+                "keyword.control.continue", 
+                "keyword.control.break",  
             ],
             "settings": {
                 "foreground": "#FFCC00", 
@@ -120,4 +120,3 @@
         }
     ]
 },
-
