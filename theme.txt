@@ -1,4 +1,4 @@
-"workbench.colorCustomizations": {
+workbench.colorCustomizations": {
     "editor.background": "#1E1E1E",  // ソフトブラックの背景
     "editor.foreground": "#CCCCCC",  // ややグレーがかった白のテキスト
     "statusBar.background": "#2C2C2C",  // ダークグレー
@@ -38,7 +38,7 @@
         {
             "scope": [
                 "variable.other.property.cpp",  // メンバー変数
-                "keyword.control.continue", 
+                "keyword.control.continue",  
                 "keyword.control.break",  
             ],
             "settings": {
@@ -69,10 +69,12 @@
                 "storage.modifier.specifier.const.cpp",  // const 修飾子
                 "entity.name.type.cpp",
                 "entity.name.namespace.cpp",
-                "storage.modifier.specifier.functional.pre-parameters.explicit.cpp"
+                "storage.modifier.specifier.functional.pre-parameters.explicit.cpp",
+                "entity.name.type.class.templated"
             ],
             "settings": {
                 "foreground": "#C2E699",  
+                "fontStyle": "" 
             }
         },
         // 強調
@@ -81,10 +83,18 @@
                 "storage.type.modifier.access.control",  // アクセス修飾子
                 "storage.type",  // 型定義
                 "storage.modifier.specifier.const.cpp",  // const 修飾子
-                "storage.modifier.specifier.functional.pre-parameters.explicit.cpp"
+                "storage.modifier.specifier.functional.pre-parameters.explicit.cpp",
             ],
             "settings": {
-                "fontStyle": "bold" 
+                "fontStyle": "italic" 
+            }
+        },
+        {
+            "scope": [
+                "storage.type.template"
+            ],
+            "settings": {
+                "fontStyle": "underline" 
             }
         },
         // 区別をつきやすくする
@@ -92,11 +102,20 @@
             "scope": [
                 "comment",  // すべてのコメント
                 "comment.block",  // ブロックコメント
-                "comment.line"  // ラインコメント
+                "comment.line",  // ラインコメント
+                "punctuation.definition.comment"
             ],
             "settings": {
                 "foreground": "#808080",  // 灰色
                 "fontStyle": "italic" 
+            }
+        },
+        {
+            "scope": [
+                "keyword.control.return.cpp"  // returnステートメント
+            ],
+            "settings": {
+                "fontStyle": "bold" 
             }
         },
         // 際立たせる
